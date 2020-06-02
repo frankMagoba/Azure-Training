@@ -1,0 +1,200 @@
+{
+  "properties": {
+    "lenses": {
+      "0": {
+        "order": 0,
+        "parts": {
+          "0": {
+            "position": {
+              "x": 0,
+              "y": 0,
+              "colSpan": 6,
+              "rowSpan": 4
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "resourceType",
+                  "value": "Microsoft.Resources/resources",
+                  "isOptional": true
+                },
+                {
+                  "name": "filter",
+                  "isOptional": true
+                },
+                {
+                  "name": "scope",
+                  "isOptional": true
+                },
+                {
+                  "name": "kind",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/BrowseAllResourcesPinnedPart"
+            }
+          },
+          "1": {
+            "position": {
+              "x": 6,
+              "y": 0,
+              "colSpan": 2,
+              "rowSpan": 2
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/ClockPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "timezoneId": "Eastern Standard Time",
+                    "timeFormat": "h:mma",
+                    "version": 1
+                  }
+                }
+              }
+            }
+          },
+          "2": {
+            "position": {
+              "x": 8,
+              "y": 0,
+              "colSpan": 2,
+              "rowSpan": 2
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/ClockPart",
+              "settings": {
+                "content": {
+                  "settings": {
+                    "timezoneId": "Pacific Standard Time",
+                    "timeFormat": "HH:mm",
+                    "version": 1
+                  }
+                }
+              }
+            }
+          },
+          "3": {
+            "position": {
+              "x": 6,
+              "y": 2,
+              "colSpan": 6,
+              "rowSpan": 4
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "options",
+                  "isOptional": true
+                },
+                {
+                  "name": "sharedTimeRange",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/MonitorChartPart",
+              "settings": {
+                "content": {
+                  "options": {
+                    "chart": {
+                      "metrics": [],
+                      "title": "Metrics chart",
+                      "titleKind": 1,
+                      "visualization": {
+                        "disablePinning": true
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "4": {
+            "position": {
+              "x": 0,
+              "y": 4,
+              "colSpan": 2,
+              "rowSpan": 2
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/HubsExtension/PartType/HelpAndSupportPart"
+            }
+          },
+          "5": {
+            "position": {
+              "x": 2,
+              "y": 4,
+              "colSpan": 2,
+              "rowSpan": 2
+            },
+            "metadata": {
+              "inputs": [],
+              "type": "Extension/Microsoft_AAD_IAM/PartType/ActiveDirectoryQuickTasksPart"
+            }
+          },
+          "6": {
+            "position": {
+              "x": 4,
+              "y": 4,
+              "colSpan": 2,
+              "rowSpan": 2
+            },
+            "metadata": {
+              "inputs": [
+                {
+                  "name": "selectedMenuItemId",
+                  "isOptional": true
+                }
+              ],
+              "type": "Extension/HubsExtension/PartType/GalleryTile"
+            }
+          }
+        }
+      }
+    },
+    "metadata": {
+      "model": {
+        "timeRange": {
+          "value": {
+            "relative": {
+              "duration": 24,
+              "timeUnit": 1
+            }
+          },
+          "type": "MsPortalFx.Composition.Configuration.ValueTypes.TimeRange"
+        },
+        "filterLocale": {
+          "value": "en-us"
+        },
+        "filters": {
+          "value": {
+            "MsPortalFx_TimeRange": {
+              "model": {
+                "format": "utc",
+                "granularity": "auto",
+                "relative": "24h"
+              },
+              "displayCache": {
+                "name": "UTC Time",
+                "value": "Past 24 hours"
+              },
+              "filteredPartIds": [
+                "StartboardPart-MonitorChartPart-27a1f200-9fb0-46ec-998e-5b355394710f"
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "name": "Customer Dashboard",
+  "type": "Microsoft.Portal/dashboards",
+  "location": "INSERT LOCATION",
+  "tags": {
+    "hidden-title": "Customer Dashboard"
+  },
+  "apiVersion": "2015-08-01-preview"
+}
